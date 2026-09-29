@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps &amp; Cloud Engineer Resume</title>
+  <style>
+    :root { --ink:#182330; --muted:#536171; --line:#cfd7df; --accent:#176283; }
+    * { box-sizing:border-box; }
+    html { background:#e9eef2; }
+    body { margin:0; color:var(--ink); font:10.2pt/1.37 Arial, Helvetica, sans-serif; }
+    .note { max-width:210mm; margin:18px auto 0; padding:10px 15px; background:#fff8df; border:1px solid #e5d69c; color:#594c24; font-size:9pt; }
+    .page { width:210mm; min-height:297mm; margin:14px auto 30px; padding:17mm 17mm 14mm; background:#fff; box-shadow:0 7px 28px #172a3b25; }
+    header { border-bottom:2px solid var(--accent); padding-bottom:10px; margin-bottom:13px; }
+    h1 { margin:0; font-size:22pt; line-height:1.07; letter-spacing:-.7px; }
+    .role { margin:5px 0 7px; font-size:11.2pt; color:var(--accent); font-weight:700; }
+    .contact { color:var(--muted); font-size:9pt; overflow-wrap:anywhere; }
+    .contact span+span::before { content:"  |  "; color:#9aa7b2; }
+    section { margin-top:13px; }
+    h2 { margin:0 0 6px; padding-bottom:3px; border-bottom:1px solid var(--line); color:var(--accent); text-transform:uppercase; letter-spacing:1.2px; font-size:9.5pt; }
+    p { margin:0; }
+    .skills { display:grid; grid-template-columns:107px 1fr; column-gap:8px; row-gap:3px; }
+    .skills strong { color:#29394a; }
+    .job { margin-top:9px; break-inside:avoid; }
+    .job:first-of-type { margin-top:4px; }
+    .job-head { display:flex; justify-content:space-between; gap:12px; font-weight:700; }
+    .job-head .date { white-space:nowrap; color:var(--muted); font-weight:400; }
+    .employer { color:var(--muted); font-size:9.3pt; margin:1px 0 4px; }
+    ul { margin:4px 0 0 17px; padding:0; }
+    li { padding-left:2px; margin-bottom:3px; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:17px; }
+    .small { color:var(--muted); font-size:9.2pt; }
+    @page { size:A4; margin:0; }
+    @media print {
+      html, body { background:white; }
+      .note { display:none; }
+      .page { margin:0; box-shadow:none; min-height:0; }
+      a { color:inherit; text-decoration:none; }
+    }
+    @media (max-width:800px) {
+      .note { margin:0; }
+      .page { width:auto; min-height:0; margin:0; padding:28px 22px; box-shadow:none; }
+      .two-col { grid-template-columns:1fr; gap:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="note"><strong>Editable sample:</strong> Replace all bracketed text, dates, and claims with your verified details before applying. The six-year timeline below is illustrative.</div>
+  <main class="page">
+    <header>
+      <h1>John Doe</h1>
+      <div class="role">DevOps &amp; Cloud Engineer</div>
+      <div class="contact">
+        <span>[City, Country]</span><span>[Phone]</span><span>[Email]</span><span>[LinkedIn URL]</span><span>[GitHub URL]</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>DevOps and cloud engineer with six years of experience building AWS infrastructure, automating delivery pipelines, and operating Linux-based services. Hands-on with Terraform, containers, CI/CD, observability, and incident response. Focused on reliable deployments, clear runbooks, secure access, and practical cost control.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <strong>Cloud &amp; IaC</strong><span>AWS (EC2, ECS, ECR, VPC, ALB, RDS, S3, IAM, CloudWatch, Route 53), Terraform</span>
+        <strong>Containers</strong><span>Docker, Kubernetes, Nginx, container image builds and deployments</span>
+        <strong>Delivery</strong><span>GitHub Actions, Jenkins, GitLab CI/CD, Git, release automation</span>
+        <strong>Operations</strong><span>Linux, Bash, Python, Ansible, Prometheus, Grafana, logging and alerting</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <div class="job-head"><span>DevOps Engineer</span><span class="date">[2023–Present]</span></div>
+        <div class="employer">[Employer] · [Location / Remote]</div>
+        <ul>
+          <li>Built and maintained reusable Terraform for AWS networking, compute, IAM, and application delivery across [environments].</li>
+          <li>Designed CI/CD pipelines that test, build, scan, and deploy containerized services; reduced release time from [before] to [after].</li>
+          <li>Operated ECS or Kubernetes workloads behind load balancers, with health checks, autoscaling, and rollback procedures.</li>
+          <li>Improved monitoring with CloudWatch, Grafana, and alerts; reduced incident detection or recovery time by [verified result].</li>
+          <li>Introduced least-privilege access, secrets handling, and runbooks for repeatable deployments and on-call response.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Cloud / Systems Engineer</span><span class="date">[2020–2023]</span></div>
+        <div class="employer">[Employer] · [Location / Remote]</div>
+        <ul>
+          <li>Administered Linux servers, patching, backups, access controls, web services, and scheduled maintenance.</li>
+          <li>Automated server configuration and operational checks with Bash, Python, or Ansible, saving [verified hours] per month.</li>
+          <li>Supported AWS workloads and troubleshot networking, DNS, TLS, performance, and deployment failures.</li>
+          <li>Documented recovery steps and collaborated with developers to resolve incidents and improve service reliability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Project</h2>
+      <p><strong>AWS Container Platform:</strong> Provisioned an ECS Fargate service with Terraform, an Application Load Balancer, CloudWatch logs, and CPU-based scaling from two to six tasks. <span class="small">[Repository URL]</span></p>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <h2>Certification</h2>
+        <p>[Certification name, issuer, year] <span class="small">or “In progress” if applicable</span></p>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <p>[Degree or qualification] · [Institution] · [Year]</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
